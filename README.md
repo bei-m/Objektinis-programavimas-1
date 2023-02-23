@@ -3,7 +3,8 @@
 Programa leidžia įvesti studentų vardus ir pavardes, namų darbų ir egzamino pažymius ir skaičiuoja kiekvieno studento galutinį pažymį. Galutinio pažymio skaičiavimo formulė:
 ![image](https://user-images.githubusercontent.com/116886672/220993297-ed501583-e082-48a1-b7d2-1f647e67070d.png)
 
-Programoje naudojamos bibliotekos yra aprašytos 'mylib.h' faile. <br>
+Programoje naudojamos bibliotekos yra aprašytos 'mylib.h' faile. <br> <br>
+"v.01.array.cpp" faile programa įgyvendinta saugant namų darbų pažymius į C masyvą, o "v.01.vector.cpp" - į std::vector tipo konteinerį. <br> <br>
 Programos veikimas:
 1. Įvestis priimama tik su 'enter' paspaudimu.
 2. Programos pradžioje vartotojui duodamas pasirinkimas įvesti pažymių maksimalų kiekį. Tai reiškia, kad kiekvienas studentas turės įvestą maksimalų pažymių kiekį, arba maksimalaus kiekio nebus (paspaudus 'n'). Įvestas maksimalus kiekis arba pasirinkimas, kad jo nebūtų (paspaudus 'n'), negali būti keičiamas programos veikimo metu.
