@@ -1,7 +1,8 @@
 # **Pirmas laboratorinis**
 ## _**V0.1 versija**_
 Programa leidžia įvesti studentų vardus ir pavardes, namų darbų ir egzamino pažymius ir skaičiuoja kiekvieno studento galutinį pažymį. Galutinio pažymio skaičiavimo formulė:
-_galutinis=0.4*vidurkis/mediana+0.6*egzaminas_ <br>
+![image](https://user-images.githubusercontent.com/116886672/220993297-ed501583-e082-48a1-b7d2-1f647e67070d.png)
+
 Programoje naudojamos bibliotekos yra aprašytos 'mylib.h' faile. <br>
 Programos veikimas:
 1. Įvestis priimama tik su 'enter' paspaudimu.
