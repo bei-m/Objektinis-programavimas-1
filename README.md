@@ -23,7 +23,8 @@ Programos veikimas:
    * Failo įrašų dalijimo į dvi grupes laikas;
    * Grupės 'vargsai' įrašymo į failą laikas;
    * Grupės 'protingieji' įrašymo į failą laikas;
-   * Visos programos veikimo laikas.
+   * Visos programos veikimo (testo) laikas;
+   * Failo generavimo laikas (neįeina į visos programos veikimo laiką).
 4. Nenorint generuoti failo (paspaudus 'n'), vartotojui duodamas pasirinkimas skaityti duomenis iš failo (paspaudus 's') (žr. b).
 
  **b)--------------** <br>
@@ -37,7 +38,7 @@ Programos veikimas:
    * Failo įrašų dalijimo į dvi grupes laikas;
    * Grupės 'vargsai' įrašymo į failą laikas;
    * Grupės 'protingieji' įrašymo į failą laikas;
-   * Visos programos veikimo laikas.
+   * Visos programos veikimo (testo) laikas.
 4. Pasirinkus neskaityti duomenų iš failo (paspaudus 'n'), vartotojui duodamas pasirinkimas duomenis įrašyti arba generuoti (žr. c).
 
 **c)--------------** <br>
@@ -47,6 +48,62 @@ Programos veikimas:
    * Pasirinkus generuoti duomenis ('g'), visi studento duomenys (vardas, pavardė, namų darbų ir egzamino pažymiai) bus sugeneruoti. Jei anksčiau programoje buvo nustatytas maksimalus pažymių kiekis, bus sugeneruotas maksimalus pažymių kiekis, jei ne – programa paprašys vartotojo įvesti norimą namų darbų pažymių kiekį (sugeneruoti). 
 3. Po kiekvieno įvesto studento vartotojas yra informuojamas, kad duomenys buvo įrašyti ir duodamas pasirinkimas įvesti dar vieną studentą (paspaudus 'y') arba baigti studentų duomenų įvedimą (paspaudus 'n').
 4. Įvedus visus studentus, visi studentų duomenys (vardas, pavardė ir galutiniai pažymiai) bus išspausdinti konsolėje abėcėlės tvarka.
+
+Testavimas: <br>
+**1000 įrašų**
+|                                                              | Generuojant failą | Negeneruojant failo |
+|--------------------------------------------------------------|-------------------|---------------------|
+| Failo generavimas                                            |    0.00929011 s   |          -          |
+| Failo nuskaitymo ir galutinių pažymių <br>skaičiavimo laikas |    0.00284422 s   |     0.00465853 s    |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                 |   0.000417265 s   |    0.000357669 s    |
+| Failo įrašų dalijimo į dvi grupes laikas                     |   0.000131624 s   |    0.000135691 s    |
+| Grupės 'vargsai' įrašymo į failą laikas                      |    0.00534262 s   |     0.00308877 s    |
+| Grupės 'protingieji' įrašymo į failą laikas                  |    0.00609496 s   |     0.00409048 s    |
+| Visos programos veikimo laikas                               |    0.0149124 s    |     0.0124375 s     |
+
+**10 000 įrašų**
+|                                                              | Generuojant failą | Negeneruojant failo |
+|--------------------------------------------------------------|-------------------|---------------------|
+| Failo generavimas                                            |     0.0759215s    |          -          |
+| Failo nuskaitymo ir galutinių pažymių <br>skaičiavimo laikas |    0.0190512 s    |     0.0350213 s     |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                 |    0.00523044 s   |     0.00370588 s    |
+| Failo įrašų dalijimo į dvi grupes laikas                     |    0.00367371 s   |     0.00098259 s    |
+| Grupės 'vargsai' įrašymo į failą laikas                      |    0.0239141 s    |     0.0276034 s     |
+| Grupės 'protingieji' įrašymo į failą laikas                  |    0.0289014 s    |      0.030084 s     |
+| Visos programos veikimo laikas                               |     0.080909 s    |      0.097546 s     |
+
+**100 000 įrašų**
+|                                                              | Generuojant failą | Negeneruojant failo |
+|--------------------------------------------------------------|-------------------|---------------------|
+| Failo generavimas                                            |     0.613484 s    |          -          |
+| Failo nuskaitymo ir galutinių pažymių <br>skaičiavimo laikas |      0.2258 s     |      0.186499 s     |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                 |    0.0459998 s    |     0.0503603 s     |
+| Failo įrašų dalijimo į dvi grupes laikas                     |    0.0184783 s    |     0.00935974 s    |
+| Grupės 'vargsai' įrašymo į failą laikas                      |     0.252823 s    |      0.27022 s      |
+| Grupės 'protingieji' įrašymo į failą laikas                  |     0.277466 s    |      0.271687 s     |
+| Visos programos veikimo laikas                               |      0.821994     |      0.789486 s     |
+
+**1 000 000 įrašų**
+|                                                              | Generuojant failą | Negeneruojant failo |
+|--------------------------------------------------------------|-------------------|---------------------|
+| Failo generavimas                                            |     5.53228 s     |          -          |
+| Failo nuskaitymo ir galutinių pažymių <br>skaičiavimo laikas |     1.92303 s     |       1.8055 s      |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                 |     0.470928 s    |      0.456711 s     |
+| Failo įrašų dalijimo į dvi grupes laikas                     |     0.259023 s    |      0.205993 s     |
+| Grupės 'vargsai' įrašymo į failą laikas                      |     2.55071 s     |      2.67187 s      |
+| Grupės 'protingieji' įrašymo į failą laikas                  |     2.97267 s     |      2.96715 s      |
+| Visos programos veikimo laikas                               |     8.20091 s     |      8.12145 s      |
+
+**10 000 000 įrašų**
+|                                                              | Generuojant failą | Negeneruojant failo |
+|--------------------------------------------------------------|-------------------|---------------------|
+| Failo generavimas                                            |     60.5875 s     |          -          |
+| Failo nuskaitymo ir galutinių pažymių <br>skaičiavimo laikas |     19.4863 s     |       18.79 s       |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                 |      5.241 s      |      5.01396 s      |
+| Failo įrašų dalijimo į dvi grupes laikas                     |     3.49691 s     |      4.24427 s      |
+| Grupės 'vargsai' įrašymo į failą laikas                      |     24.4044 s     |      24.3427 s      |
+| Grupės 'protingieji' įrašymo į failą laikas                  |     28.6616 s     |      28.8861 s      |
+| Visos programos veikimo laikas                               |     81.5704 s     |      81.9637 s      |
 
 ## _**V0.3 versija**_
 Programa leidžia įvesti arba skaityti iš failo studentų vardus ir pavardes, namų darbų ir egzamino pažymius ir skaičiuoja kiekvieno studento galutinį pažymį. Galutinio pažymio skaičiavimo formulė:
