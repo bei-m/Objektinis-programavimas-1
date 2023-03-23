@@ -75,9 +75,16 @@ Testavimas: <br>
 **1 000 000 įrašų:**
 |                                                             | vektorius<br>(vector) | sąrašas<br>(list) | dekas<br>(deque) |
 |-------------------------------------------------------------|-----------------------|-------------------|------------------|
-| Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas    |       17.7435 s       |     15.6217 s     |     15.0332 s    |
-| Failo įrašų rūšiavimo abėcėlės tvarka laikas                |       3.93015 s       |     13.1681 s     |     4.05893 s    |
-| Failo įrašų dalijimo į dvi grupes laikas                    |       2.49507 s       |      3.2871 s     |    0.643154 s    |
+| Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas    |       1.69287 s       |     1.77535 s     |     1.6581 s     |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                |       0.438304 s      |     0.920312 s    |    0.439293 s    |
+| Failo įrašų dalijimo į dvi grupes laikas                    |       0.320196 s      |     0.527982 s    |    0.0726751 s   |
+
+**10 000 000 įrašų:**
+|                                                             | vektorius<br>(vector) | sąrašas<br>(list) | dekas<br>(deque) |
+|-------------------------------------------------------------|-----------------------|-------------------|------------------|
+| Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas    |       17.4677 s       |     15.6275 s     |     16.9864 s    |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                |        3.9311 s       |     14.7486 s     |     4.48349 s    |
+| Failo įrašų dalijimo į dvi grupes laikas                    |        2.728 s        |     3.69031 s     |    0.714614 s    |
 
 ## **Testavimo sistemos parametrai**
 
