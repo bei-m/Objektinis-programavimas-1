@@ -79,6 +79,20 @@ Testavimas: <br>
 | Failo įrašų rūšiavimo abėcėlės tvarka laikas                |       3.93015 s       |     13.1681 s     |     4.05893 s    |
 | Failo įrašų dalijimo į dvi grupes laikas                    |       2.49507 s       |      3.2871 s     |    0.643154 s    |
 
+## **Testavimo sistemos parametrai**
+
+### **CPU**
+Base speed: 2.3 GHz <br>
+Cores: 2 <br>
+Threads: 4 <br>
+
+### **RAM**
+Available to system: 4 GB <br>
+Speed: 2133 MHz <br>
+
+### **SSD**
+Capacity: 128 GB
+
 ## _**V0.4 versija**_
 Programa leidžia įvesti arba skaityti iš failo studentų duomenis (vardus ir pavardes, namų darbų ir egzamino pažymius) arba generuoti šių duomenų failus ir skaičiuoja kiekvieno studento galutinius pažymius. Galutinio pažymio skaičiavimo formulė:
 ![image](https://user-images.githubusercontent.com/116886672/220993297-ed501583-e082-48a1-b7d2-1f647e67070d.png)
@@ -184,6 +198,7 @@ Testavimas: <br>
 | Grupės 'vargsai' įrašymo į failą laikas                      |     24.4044 s     |      24.3427 s      |
 | Grupės 'protingieji' įrašymo į failą laikas                  |     28.6616 s     |      28.8861 s      |
 | Visos programos veikimo laikas                               |     81.5704 s     |      81.9637 s      |
+
 
 ## _**V0.3 versija**_
 Programa leidžia įvesti arba skaityti iš failo studentų vardus ir pavardes, namų darbų ir egzamino pažymius ir skaičiuoja kiekvieno studento galutinį pažymį. Galutinio pažymio skaičiavimo formulė:
