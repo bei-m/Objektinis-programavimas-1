@@ -1,4 +1,84 @@
 # **Pirmas laboratorinis**
+## _**V0.5 versija**_
+Programa leidžia įvesti arba skaityti iš failo studentų duomenis (vardus ir pavardes, namų darbų ir egzamino pažymius) arba generuoti šių duomenų failus, skaičiuoja kiekvieno studento galutinius pažymius ir leidžia analizuoti darbo su failais trukmę. Galutinio pažymio skaičiavimo formulė: <br>
+![image](https://user-images.githubusercontent.com/116886672/220993297-ed501583-e082-48a1-b7d2-1f647e67070d.png)
+
+Programos veikimas: 
+ * Duomenų failo generavimas: žr. a)
+ * Duomenų skaitymas iš turimo .txt failo: žr. b)
+ * Duomenų įrašymas arba generavimas: žr. c)
+ 
+**Įvestis priimama tik su 'enter' paspaudimu.**
+
+ **a)--------------** <br>
+1. Programos pradžioje vartotojui duodamas pasirinkimas sugeneruoti duomenų (studentų vardų, pavardžių, namų darbų ir egzamino pažymių) failą     (paspaudus 's'). Pasirinkus generuoti failą ('s'), programa paprašys įvesti norimą studentų (įrašų) kiekį. Įvedus studentų kiekį, vartotojui duodamas pasirinkimas įrašyti norimą studentų pažymių kiekį arba paspausti 'n' ir programa pažymių kiekį sugeneruos atsitiktinai (1–15). Po to programa vartotojo prašys įvesti failo pavadinimą, kuriuo vartotojas nori pavadinti sugeneruotą failą.
+2. Sugeneravus failą, vartotojui duodamas pasirinkimas duomenis (studentų vardus, pavardes ir galutinius pažymius) spausdinti failuose (paspaudus 'f') arba baigti programos darbą (paspaudus 'b').
+2.1. Pasirinkus duomenų išvedimą į failus ('f'), vartotojui duodamas pasirinkimas kokį konteinerį naudoti: vektorių (paspaudus 'v'), sąrašą (paspaudus 'l'), deką (paspaudus 'd') arba visus tris (paspaudus '3') Nepaisant to, koks konteineris naudojamas, studentai yra išskirstomi į dvi grupes pagal galutinius pažymius (bent vienas galutinis >=5 ir <5) ir įrašomi į du failus ('vargsai(x).txt' ir 'protingieji(x).txt')*, o juose – surašyti abėcėlės tvarka. Taip pat, gale programos į konsolę yra išspausdinama:
+   * Failo generavimo laikas (neįeina į visos programos veikimo laiką);
+   * Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas;
+   * Failo įrašų rūšiavimo abėcėlės tvarka laikas;
+   * Failo įrašų dalijimo į dvi grupes laikas;
+   * Grupės 'vargsai' įrašymo į failą laikas;
+   * Grupės 'protingieji' įrašymo į failą laikas;
+   * Visos programos veikimo (testo) laikas.
+Jei vartotojas pasirinko naudoti tris konteinerius, tada nurodyti duomenys išspausdinami tris kartus, o prieš tai programa nurodo, kurio konteinerio testavimo duomenys yra matomi.
+2.2. Pasirinkus baigti programos darbą ('b'), programa baigs darbą.
+3. Nenorint generuoti failo (paspaudus 'n'), vartotojui duodamas pasirinkimas skaityti duomenis iš failo (paspaudus 's') (žr. b). <br>
+
+*čia x – raidė nurodanti koks konteineris buvo naudotas (v – vektorius (vector), l – sąrašas (list), d – deque (dekas)).
+
+ **b)--------------** <br>
+ 1.	Nenorint generuoti failo (paspaudus 'n'), vartotojui duodamas pasirinkimas skaityti duomenis iš failo (paspaudus 's'). 
+ 2. Pasirinkus skaityti iš failo ('s'), programa paprašys vartotojo įvesti pavadinimą (.txt) failo, iš kurio vartotojas nori skaityti duomenis. Jeigu pasirinktas failas nebus rastas arba jis bus tuščias, programa informuos vartotoją ir baigs darbą.
+ 3.	Jei failas randamas ir nėra tuščias, vartotojui duodamas pasirinkimas duomenis spausdinti failuose (paspaudus 'f') arba konsolėje (paspaudus 'k'). 
+   * Pasirinkus spausdinti konsolėje ('k') visi studentų duomenys (vardas, pavardė ir galutiniai pažymiai) bus išspausdinti konsolėje abėcėlės tvarka.
+   * Pasirinkus duomenų išvedimą į failus ('f'), vartotojui duodamas pasirinkimas kokį konteinerį naudoti: vectorių (paspaudus 'v'), sąrašą (paspaudus 'l')  ar deką (paspaudus 'd'). Nepaisant to, koks konteineris naudojamas, studentai yra išskirstomi į dvi grupes pagal galutinius pažymius (bent vienas galutinis >=5 ir <5) ir įrašomi į du failus ('vargsai(x).txt' ir 'protingieji(x).txt')*, o juose – surašyti abėcėlės tvarka. Taip pat, gale programos į konsolę yra išspausdinama:
+   * Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas;
+   * Failo įrašų rūšiavimo abėcėlės tvarka laikas;
+   * Failo įrašų dalijimo į dvi grupes laikas;
+   * Grupės 'vargsai' įrašymo į failą laikas;
+   * Grupės 'protingieji' įrašymo į failą laikas;
+   * Visos programos veikimo (testo) laikas.
+4. Pasirinkus neskaityti duomenų iš failo (paspaudus 'n'), vartotojui duodamas pasirinkimas duomenis įrašyti arba generuoti (žr. c). <br>
+*čia x – raidė nurodanti koks konteineris buvo naudotas (v – vektorius (vector), l – sąrašas (list), d – deque (dekas)).
+
+**c)--------------** <br>
+1. Vartotojui duodamas pasirinkimas įvesti pažymių maksimalų kiekį. Tai reiškia, kad kiekvienas studentas turės įvestą maksimalų pažymių kiekį arba maksimalaus kiekio nebus (paspaudus 'n'). Įvestas maksimalus kiekis arba pasirinkimas, kad jo nebūtų (paspaudus 'n'), negali būti keičiamas programos veikimo metu.
+2. Vartotojui duodamas pasirinkimas studento duomenis įrašyti (paspaudus 'i') arba generuoti (paspaudus 'g').
+   * Pasirinkus įvedinėti duomenis ('i'), vartotojas turės įvesti visus duomenis: studento vardą, pavardę, namų darbų ir egzamino pažymius. Programos pradžioje nustačius maksimalų kiekį, programa leis įvesti pažymius tol, kol bus pasiektas maksimalus pažymių kiekis arba kol vartotojas paspaus 'n'. Jei įvestas mažesnis nei maksimalus pažymių kiekis, likęs kiekis bus užpildytas nuliais.
+   * Pasirinkus generuoti duomenis ('g'), visi studento duomenys (vardas, pavardė, namų darbų ir egzamino pažymiai) bus sugeneruoti. Jei anksčiau programoje buvo nustatytas maksimalus pažymių kiekis, bus sugeneruotas maksimalus pažymių kiekis, jei ne – programa paprašys vartotojo įvesti norimą namų darbų pažymių kiekį (sugeneruoti). 
+3. Po kiekvieno įvesto studento vartotojas yra informuojamas, kad duomenys buvo įrašyti ir duodamas pasirinkimas įvesti dar vieną studentą (paspaudus 'y') arba baigti studentų duomenų įvedimą (paspaudus 'n').
+4. Įvedus visus studentus, visi studentų duomenys (vardas, pavardė ir galutiniai pažymiai) bus išspausdinti konsolėje abėcėlės tvarka.
+
+Testavimas: <br>
+**1000 įrašų:**
+|                                                             | vektorius<br>(vector) | sąrašas<br>(list) | dekas<br>(deque) |
+|-------------------------------------------------------------|-----------------------|-------------------|------------------|
+| Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas    |      0.00232277 s     |    0.0024063 s    |   0.00153724 s   |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                |     0.000426629 s     |   0.000315543 s   |   0.000316676 s  |
+| Failo įrašų dalijimo į dvi grupes laikas                    |     0.000149498 s     |   0.000159611 s   |   9.4844e-05 s   |
+
+**10 000 įrašų:**
+|                                                             | vektorius<br>(vector) | sąrašas<br>(list) | dekas<br>(deque) |
+|-------------------------------------------------------------|-----------------------|-------------------|------------------|
+| Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas    |      0.0196152 s      |    0.0210919 s    |    0.018093 s    |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                |      0.00392875 s     |    0.00370931 s   |   0.00512393 s   |
+| Failo įrašų dalijimo į dvi grupes laikas                    |      0.00117736 s     |    0.00391445 s   |   0.00144923 s   |
+
+**100 000 įrašų:**
+|                                                             | vektorius<br>(vector) | sąrašas<br>(list) | dekas<br>(deque) |
+|-------------------------------------------------------------|-----------------------|-------------------|------------------|
+| Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas    |       0.164996 s      |     0.176613 s    |    0.156208 s    |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                |      0.0392634 s      |     0.063616 s    |    0.041485 s    |
+| Failo įrašų dalijimo į dvi grupes laikas                    |      0.0092005 s      |    0.0247103 s    |   0.00609461 s   |
+
+**1 000 000 įrašų:**
+|                                                             | vektorius<br>(vector) | sąrašas<br>(list) | dekas<br>(deque) |
+|-------------------------------------------------------------|-----------------------|-------------------|------------------|
+| Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas    |       17.7435 s       |     15.6217 s     |     15.0332 s    |
+| Failo įrašų rūšiavimo abėcėlės tvarka laikas                |       3.93015 s       |     13.1681 s     |     4.05893 s    |
+| Failo įrašų dalijimo į dvi grupes laikas                    |       2.49507 s       |      3.2871 s     |    0.643154 s    |
+
 ## _**V0.4 versija**_
 Programa leidžia įvesti arba skaityti iš failo studentų duomenis (vardus ir pavardes, namų darbų ir egzamino pažymius) arba generuoti šių duomenų failus ir skaičiuoja kiekvieno studento galutinius pažymius. Galutinio pažymio skaičiavimo formulė:
 ![image](https://user-images.githubusercontent.com/116886672/220993297-ed501583-e082-48a1-b7d2-1f647e67070d.png)
