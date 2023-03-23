@@ -31,14 +31,14 @@ Jei vartotojas pasirinko naudoti tris konteinerius, tada nurodyti duomenys išsp
  1.	Nenorint generuoti failo (paspaudus 'n'), vartotojui duodamas pasirinkimas skaityti duomenis iš failo (paspaudus 's'). 
  2. Pasirinkus skaityti iš failo ('s'), programa paprašys vartotojo įvesti pavadinimą (.txt) failo, iš kurio vartotojas nori skaityti duomenis. Jeigu pasirinktas failas nebus rastas arba jis bus tuščias, programa informuos vartotoją ir baigs darbą.
  3.	Jei failas randamas ir nėra tuščias, vartotojui duodamas pasirinkimas duomenis spausdinti failuose (paspaudus 'f') arba konsolėje (paspaudus 'k'). 
-   * Pasirinkus spausdinti konsolėje ('k') visi studentų duomenys (vardas, pavardė ir galutiniai pažymiai) bus išspausdinti konsolėje abėcėlės tvarka.
-   * Pasirinkus duomenų išvedimą į failus ('f'), vartotojui duodamas pasirinkimas kokį konteinerį naudoti: vectorių (paspaudus 'v'), sąrašą (paspaudus 'l')  ar deką (paspaudus 'd'). Nepaisant to, koks konteineris naudojamas, studentai yra išskirstomi į dvi grupes pagal galutinius pažymius (bent vienas galutinis >=5 ir <5) ir įrašomi į du failus ('vargsai(x).txt' ir 'protingieji(x).txt')*, o juose – surašyti abėcėlės tvarka. Taip pat, gale programos į konsolę yra išspausdinama:
-   * Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas;
-   * Failo įrašų rūšiavimo abėcėlės tvarka laikas;
-   * Failo įrašų dalijimo į dvi grupes laikas;
-   * Grupės 'vargsai' įrašymo į failą laikas;
-   * Grupės 'protingieji' įrašymo į failą laikas;
-   * Visos programos veikimo (testo) laikas.
+  * Pasirinkus spausdinti konsolėje ('k') visi studentų duomenys (vardas, pavardė ir galutiniai pažymiai) bus išspausdinti konsolėje abėcėlės tvarka.
+  * Pasirinkus duomenų išvedimą į failus ('f'), vartotojui duodamas pasirinkimas kokį konteinerį naudoti: vectorių (paspaudus 'v'), sąrašą (paspaudus 'l')  ar deką (paspaudus 'd'). Nepaisant to, koks konteineris naudojamas, studentai yra išskirstomi į dvi grupes pagal galutinius pažymius (bent vienas galutinis >=5 ir <5) ir įrašomi į du failus ('vargsai(x).txt' ir 'protingieji(x).txt')*, o juose – surašyti abėcėlės tvarka. Taip pat, gale programos į konsolę yra išspausdinama:
+    * Failo nuskaitymo ir galutinių pažymių skaičiavimo laikas;
+    * Failo įrašų rūšiavimo abėcėlės tvarka laikas;
+    * Failo įrašų dalijimo į dvi grupes laikas;
+    * Grupės 'vargsai' įrašymo į failą laikas;
+    * Grupės 'protingieji' įrašymo į failą laikas;
+    * Visos programos veikimo (testo) laikas.
 4. Pasirinkus neskaityti duomenų iš failo (paspaudus 'n'), vartotojui duodamas pasirinkimas duomenis įrašyti arba generuoti (žr. c). <br>
 *čia x – raidė nurodanti koks konteineris buvo naudotas (v – vektorius (vector), l – sąrašas (list), d – deque (dekas)).
 
