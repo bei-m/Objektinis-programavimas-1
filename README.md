@@ -8,7 +8,15 @@ Programos veikimas:
  * Duomenų skaitymas iš turimo .txt failo: žr. b)
  * Duomenų įrašymas arba generavimas: žr. c)
 
-**Įvestis priimama tik su 'enter' paspaudimu.**
+**Svarbu:**
+* Įvestis priimama tik su 'enter' paspaudimu.
+* Generuojamo '.txt' failo formatas: <br>
+Pavarde  Vardas  ND1  ...  NDn  Egz.
+* Priimamų skaitymui '.txt' failų formatai: <br>
+   * Pavarde  Vardas  ND1  ...  NDn  Egz.  <br>
+   * Pavarde  Vardas  Egz.  ND1  ...  NDn  <br>
+
+Jei programa skaitant failą neras egzamino pažymio, automatiškai bus skaitoma pirmuoju pateiktu formatu. <br> <br>
 
  **a)--------------** <br>
  1. Programos pradžioje naudotojui duodamas pasirinkimas sugeneruoti duomenų (studentų vardų, pavardžių, namų darbų ir egzamino pažymių) failą (paspaudus 's'). Pasirinkus generuoti failą ('s'), programa paprašys įvesti norimą studentų (įrašų) kiekį. Įvedus studentų kiekį, naudotojui duodamas pasirinkimas įrašyti norimą studentų pažymių kiekį arba paspausti 'n' ir programa pažymių kiekį sugeneruos atsitiktinai (1–15). Po to programa naudotojo prašys įvesti failo pavadinimą, kuriuo naudotojas nori pavadinti sugeneruotą failą.
