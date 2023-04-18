@@ -332,7 +332,7 @@ void vec_1(string f, bool ch)
     }
     data.close(); 
     
-    if(ch==0) {spausdinti (grupe); exit(0);}
+    if(ch==0) { sort (grupe.begin(), grupe.end(), rusiuoti); spausdinti (grupe); exit(0); }
     else
     {
         a=grupe.size();
